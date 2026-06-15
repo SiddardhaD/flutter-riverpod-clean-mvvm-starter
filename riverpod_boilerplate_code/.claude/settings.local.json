@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /Users/nvc/Desktop/collectors-card/frontend && echo \"=== pubspec.yaml ===\" && cat pubspec.yaml)",
+      "Read(//Users/nvc/Desktop/collectors-card/frontend/**)",
+      "Bash(flutter --version)",
+      "Bash(flutter pub *)",
+      "Bash(dart run *)",
+      "Bash(curl -s https://pub.dev/api/packages/retrofit_generator)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\([v['version'] for v in d['versions']][-12:]\\)\")",
+      "Bash(curl -s https://pub.dev/api/packages/retrofit)",
+      "Bash(sed -i '' 's/  retrofit: \\\\^4.9.0/  retrofit: 4.6.0/' pubspec.yaml)",
+      "Bash(sed -i '' 's/  retrofit_generator: \\\\^10.2.0/  retrofit_generator: ^9.7.0/' pubspec.yaml)",
+      "Bash(flutter analyze *)",
+      "Bash(flutter test *)",
+      "Bash(flutter build *)"
+    ]
+  }
+}
